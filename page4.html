@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Pizza</title>
+    <link rel="stylesheet" media="screen and (max-width: 840px)" href="phone.css"> 
+    <link rel="stylesheet" href="chess.css">
+    <style type="text/css">
+        * {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #FF6600;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 50px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	margin-top: 0;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #f5f5f5;
+}
+
+input[type="submit"] {
+	padding: 10px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+footer{
+    margin-top: 110px;
+}
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.OrDLTW7NmyMfpyp3xtZGZAHaGK&pid=Api&P=0" alt="img">
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="page2.html">Menu</a></li>
+            <li class="item"><a href="page3.html">Order</a></li>
+            <li class="item"><a href="page4.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="first">Online Pizza</h1>
+
+    <div class="container">
+		<h1>Contact Us</h1>
+		<form action="#" method="post">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="Your name">
+
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="Your email address">
+
+			<label for="message">Message</label>
+			<textarea id="message" name="message" placeholder="Enter your message here"></textarea>
+
+			<input type="submit" value="Send">
+		</form>
+    </div>
+
+        <a href="https://wa.me/03035576624"
+        target="_blank"
+        class="float"
+        style="
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 200px;
+        right: 900px;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 2px 2px 3px #999;
+
+        "
+        >
+          <img
+          src="https://trickuweb.com/whatsapp.png" alt="" height="60px" width="60px"
+          />
+        </a>
+
+        <footer>
+            <div class="center">
+                Copyright &copy; www.OnlinePizza.com. All rights reserved!
+            </div>
+        </footer>
+	
+    
+</body>
+</html>
