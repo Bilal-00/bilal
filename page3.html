@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Online Pizza</title>
+<link rel="stylesheet" media="screen and (max-width: 840px)" href="phone.css"> 
+<link rel="stylesheet" href="chess.css">
+</head>
+<body bgcolor="#FF6600" text="White">
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.OrDLTW7NmyMfpyp3xtZGZAHaGK&pid=Api&P=0" alt="img">
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="page2.html">Menu</a></li>
+            <li class="item"><a href="page3.html">Order</a></li>
+            <li class="item"><a href="page4.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+<h1 align="center"><u>Online Pizza</u></h1>
+<table align="center">
+<tr>
+<td class="t1"><h5  align="center">Small Pizza🍕:</h5></td>
+<td class="t2"><h4  align="center">Medium Pizza🍕:</h4></td>
+<td class="t3"><h3  align="center">Large Pizza🍕:</h3></td>
+</tr>
+</table>
+<div style="width:100%; margin:auto;">
+<!--form -->
+<form Name="form" Method="post" Action="script.php">
+<!--Personal Info -->
+<fieldset class="f1">
+<legend class="l1">Personal Information</legend>
+<label>First Name:</label><input Type="text" Name="fname" size=25/>
+<label>Last Name:</label><input Type="text" Name="lname" size=25/>
+<label>Mobile#:</label><input Type="text" Name="mobile" size=25/>
+<label>Address: <textarea col="10" rows="1" Name="address"></textarea></label>
+</fieldset>
+<!--order details -->
+<fieldset class="f2">
+<legend class="l1">Order Details</legend>
+<select name="size">
+<option>Select Pizza Size</option>
+<option value="small">Small</option>
+<option value="medium">Medium</option>
+<option value="large">Large</option>
+<option value="Family">Family</option>
+</select>
+<select Name="quantity">
+<option>Select Quantity</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+<label>Delivery Date:</label> <input Type="date" name="date">
+<label>Delivery Time:</label> <input Type="time" name="time">
+<select name="payment">
+<option>Select Payment option</option>
+<option value="Easy paisa">Easy paisa</option>
+<option value="Credit card">Credit card</option>
+<option value="cash on delivery">cash on delivery</option>
+</select>
+</fieldset>
+<!--chesses -->
+<fieldset class="f3">
+<legend class="l1">Chesses</legend>
+<input Type="radio" Name="chesses" value="mozzarella">Mozzarella
+<input Type="radio" Name="chesses" value="cheddar">Cheddar
+<input Type="radio" Name="chesses" value="Feta">Feta
+</fieldset>
+<!--sauces -->
+<fieldset class="f4">
+<legend class="l1">Sauces</legend>
+<input Type="radio" Name="sauces" value="Pizza sauces">Pizza sauce
+<input Type="radio" Name="sauces" value="BBQ sauce">BBQ sauce
+<input Type="radio" Name="sauces" value="Garlic sauce">Garlic sauce
+<input Type="radio" Name="sauces" value="buffalo sauce">Buffalo sauce
+</fieldset>
+<!--cold drink -->
+<fieldset class="f5">
+<legend class="l1">Cold Drink</legend>
+<input Type="radio" Name="drink" value="coke">Coke
+<input Type="radio" Name="drink" value="Pepsi">Pepsi
+<input Type="radio" Name="drink" value="7up"> 7up
+<input Type="radio" Name="drink" value="sprite">Sprite
+</fieldset>
+<!-- choose topping -->
+<fieldset class="f6">
+<legend class="l1">Choose Toppings-Rs100 each</legend>
+<input Type="checkbox" Name="topping" value="green olive">Green Olives
+<input Type="checkbox" Name="topping" value="red onion">Red onions
+<input Type="checkbox" Name="topping" value="mashroom"> Mashroom
+<input Type="checkbox" Name="topping" value="origano">Origano
+</fieldset>
+<!--instructions -->
+<fieldset class="f7">
+<legend class="l1">Special Instructions</legend>
+<textarea Name="instructions" col="25" ></textarea>
+</fieldset>
+<button id="btn" class="butt1" type="submit">submit</button>
+<button id="btn1" class="butt2" type="reset">reset</button>
+</form>
+</div>
+
+<footer>
+    <div class="center">
+        Copyright &copy; www.OnlinePizza.com. All rights reserved!
+    </div>
+</footer>
+<script type="text/javascript">
+    document.getElementById("btn").onclick=function(){
+        alert("your order submit successful")
+    }
+
+    document.getElementById("btn1").onclick=function(){
+        alert("your order form is reset")
+    }
+</script>
+</body>
+</html>
